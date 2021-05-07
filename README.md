@@ -24,7 +24,7 @@ The first time you run Selenium, it might fail to work due to being from an unid
 
 Go to your Mac's System Settings. In the General tab, look for the bottom section, which should have an option to `Open Anyway`
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b83da1f4-5352-4998-b103-7c115a4a8049/Screen_Shot_2021-05-06_at_10.35.45_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b83da1f4-5352-4998-b103-7c115a4a8049/Screen_Shot_2021-05-06_at_10.35.45_AM.png)
+[Example of System Settings.](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_solution.png?raw=true)
 
 ## Set test options
 
