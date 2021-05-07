@@ -20,11 +20,11 @@ As an example, this test suite comes with `ChromeDriver 90.0.4430.24`, which wil
 
 The first time you run Selenium, it might fail to work due to being from an unidentified developer. You'll receive a warning.
 
-[Example of the error](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_error.png?raw=true)
+[Example of the error](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/troubleshooting_images/mac_webdriver_error.png?raw=true)
 
 Go to your Mac's System Settings. In the General tab, look for the bottom section, which should have an option to `Open Anyway`
 
-[Example of System Settings](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_solution.png?raw=true)
+[Example of System Settings](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/troubleshooting_images/mac_webdriver_solution.png?raw=true)
 
 ## Set test options
 
@@ -109,6 +109,8 @@ Dashboard: https://syndio-qa-db.herokuapp.com/
 ✅ has large responsive breakpoint
 
 ## Screencast
+
+See this suite in action with [this quick screencast](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/troubleshooting_images/syndio_dashboard_automated_screencast.mov).
 
 ## Opportunities to refactor
 
