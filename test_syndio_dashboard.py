@@ -1,5 +1,5 @@
 import unittest
-from driver_setup import functions as func
+import functions as func
 from elements import Elements as Elements
 
 driver = func.new_driver()
@@ -138,6 +138,16 @@ class Syndio(unittest.TestCase):
         tab_class = race_tab.find_element_by_tag_name("button").get_attribute("class")
 
         self.assertEqual("tab tab-active", tab_class)
+
+    def test_is_gender_tab_clickable_when_race_tab_is_active(self):
+        race_tab = Elements().race_tab(driver)
+        gender_tab = Elements().gender_tab(driver)
+
+        race_tab.click()
+
+        tab_class = gender_tab.find_element_by_tag_name("button").get_attribute("class")
+
+        self.assertEqual("tab tab-inactive", tab_class)
 
     def test_does_clicking_race_tab_repopulate_pay_gap_box(self):
         race_tab = Elements().race_tab(driver)
