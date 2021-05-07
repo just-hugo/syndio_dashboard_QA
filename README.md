@@ -98,7 +98,8 @@ has large responsive breakpoint
 
 ## Screencast
 
-## Plans to refactor
+## Opportunities to refactor
 
 - Expand to cross-browser support (including multiple versions of the same browser
 - add functions to build a URL
+- further refactoring to reduce duplicate code, remove hardcoding, and increase flexibility
