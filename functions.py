@@ -1,7 +1,7 @@
 from selenium import webdriver
-from driver_setup import browser_options
+from test_options import browser_options
 from driver_setup.driver_path import driver_path
-from driver_setup.wait_time import default_wait
+from test_options.wait_time import default_wait
 
 
 # Takes a list of browser options and assigns them to webdriver.

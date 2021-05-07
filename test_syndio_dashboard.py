@@ -1,6 +1,7 @@
 import unittest
 import functions as func
 from elements import Elements as Elements
+from test_options import expected_data as expected
 
 driver = func.new_driver()
 
@@ -67,31 +68,31 @@ class Syndio(unittest.TestCase):
     def test_is_header_70px_high(self):
         header = Elements().header(driver)
 
-        self.assertEqual(header.size["height"], 70)
+        self.assertEqual(header.size["height"], expected.header_height)
 
     def test_is_dropdown_button_40px_high(self):
         dropdown_button = Elements().dropdown_button(driver)
 
-        self.assertEqual(dropdown_button.size["height"], 40)
+        self.assertEqual(dropdown_button.size["height"], expected.dropdown_button_height)
 
     def test_is_header_background_color_373737(self):
         header_background = Elements().header_background_color(driver)
-        self.assertEqual(header_background, '#373737')
+        self.assertEqual(header_background, expected.header_background_color)
 
     def test_is_dropdown_button_background_color_262626(self):
         dropdown_button_background = Elements().dropdown_button_background_color(driver)
 
-        self.assertEqual(dropdown_button_background, '#262626')
+        self.assertEqual(dropdown_button_background, expected.dropdown_button_background_color)
 
     def test_is_dropdown_button_border_color_0d8b7f_when_active(self):
         dropdown_button_border = Elements().dropdown_button_border_color(driver)
 
-        self.assertEqual(dropdown_button_border, "#0d8b7f")
+        self.assertEqual(dropdown_button_border, expected.dropdown_button_border_color)
 
     def test_is_dropdown_button_border_1px_high_when_active(self):
         dropdown_button_border = Elements().dropdown_button_border_height(driver)
 
-        self.assertEqual(dropdown_button_border, "1px")
+        self.assertEqual(dropdown_button_border, expected.dropdown_button_border_height)
 
     def test_is_dropdown_button_clickable(self):
         dropdown_button = Elements().dropdown_button(driver)
@@ -100,7 +101,7 @@ class Syndio(unittest.TestCase):
 
         button_class = dropdown_button.get_attribute("class")
 
-        self.assertEqual(button_class, "toggle active")
+        self.assertEqual(button_class, expected.dropdown_button_active_class)
 
     def test_is_group_by_function_menu_item_clickable(self):
         dropdown_button = Elements().dropdown_button(driver)
@@ -111,7 +112,7 @@ class Syndio(unittest.TestCase):
 
         button_class = dropdown_button.get_attribute("class")
 
-        self.assertEqual("toggle ", button_class)
+        self.assertEqual(button_class, expected.dropdown_button_inactive_class)
 
     def test_is_group_by_role_menu_item_clickable(self):
         dropdown_button = Elements().dropdown_button(driver)
@@ -121,14 +122,14 @@ class Syndio(unittest.TestCase):
 
         button_class = dropdown_button.get_attribute("class")
 
-        self.assertEqual("toggle ", button_class)
+        self.assertEqual(button_class, expected.dropdown_button_inactive_class)
 
     def test_is_gender_tab_active_by_default(self):
         gender_tab = Elements().gender_tab(driver)
 
         tab_class = gender_tab.find_element_by_tag_name("button").get_attribute("class")
 
-        self.assertEqual("tab tab-active", tab_class)
+        self.assertEqual(tab_class, expected.tab_active_class)
 
     def test_is_race_tab_clickable(self):
         race_tab = Elements().race_tab(driver)
@@ -137,7 +138,7 @@ class Syndio(unittest.TestCase):
 
         tab_class = race_tab.find_element_by_tag_name("button").get_attribute("class")
 
-        self.assertEqual("tab tab-active", tab_class)
+        self.assertEqual(tab_class, expected.tab_active_class)
 
     def test_is_gender_tab_clickable_when_race_tab_is_active(self):
         race_tab = Elements().race_tab(driver)
@@ -147,7 +148,7 @@ class Syndio(unittest.TestCase):
 
         tab_class = gender_tab.find_element_by_tag_name("button").get_attribute("class")
 
-        self.assertEqual("tab tab-inactive", tab_class)
+        self.assertEqual(tab_class, expected.tab_inactive_class)
 
     def test_does_clicking_race_tab_repopulate_pay_gap_box(self):
         race_tab = Elements().race_tab(driver)

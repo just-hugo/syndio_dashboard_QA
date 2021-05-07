@@ -6,7 +6,7 @@ This test suite was built using Selenium in Python, and runs in Python's unittes
 
 - [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)
 
-Selenium manipulates browsers using a Webdriver, an executable which must be downloaded and either added to your PATH or added to `driver_setup`. Then, `driver_path.py` must be updated with the PATH of your Webdriver. 
+Selenium manipulates browsers using a Webdriver, an executable which must be downloaded and either added to your PATH or added to `/driver_setup/`. Then, `/driver_setup/driver_path.py` must be updated with the PATH of your Webdriver. 
 
 This suite was developed to run on Chrome, and your results may vary if you attempt another browser.
 
@@ -28,7 +28,9 @@ Go to your Mac's System Settings. In the General tab, look for the bottom sectio
 
 ## Set test options
 
-You may optionally customize browser settings (such as running incognito) or the wait time for test steps before timing out in `browser_options.py` and `wait_time.py`
+You may optionally customize browser settings (such as running incognito) or the wait time for test steps before timing out in `/test_options/browser_options.py` and `/test_options/wait_time.py`
+
+You may also customize the expected parameters for things like element height, color, or active status in `/test_options/expected_data.py` 
 
 ## Run tests
 

@@ -1,7 +1,7 @@
 import unittest
 from selenium.webdriver.support.color import Color
 
-class Elements(unittest.TestCase):
+class Elements(unittest.BaseTestSuite):
 
     def header(self, driver):
 
