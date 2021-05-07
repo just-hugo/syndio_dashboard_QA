@@ -71,33 +71,35 @@ You may optionally customize browser settings (such as running incognito) or the
 
 ✅ dropdown menu has list items
 
-dropdown list items are clickable
-- Group by function is clickable
+❌ dropdown list items are clickable
+- ❌ Group by function is clickable
 - ✅ Group by role is clickable
+❌ clicking dropdown menu items updates dashboard data
+✅ gender tab exists
+✅ gender tab is active by default
 
-clicking dropdown menu items updates dashboard data
+✅ race tab exists
 
-gender tab exists
 
-gender tab is active by default
+✅ race tab is clickable
 
-race tab exists
 
-race tab is clickable
+✅ pay gap box exists
 
-pay gap box exists
 
-employee comparison box exists
+✅ employee comparison box exists
 
-budget box exists
 
-clicking race tab repopulates content boxes
+✅ budget box exists
 
-has small responsive breakpoint
+❌ clicking race tab repopulates content boxes
 
-has mid responsive breakpoint
+❌ has small responsive breakpoint
 
-has large responsive breakpoint
+❌ has mid responsive breakpoint
+
+
+✅ has large responsive breakpoint
 
 ## Screencast
 
