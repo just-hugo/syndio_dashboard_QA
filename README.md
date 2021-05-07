@@ -42,35 +42,38 @@ You may optionally customize browser settings (such as running incognito) or the
 
 ### Test cases
 
-header exists
 
-header height is 70 px
+✅ header exists
 
-header background is 373737
+✅ header height is 70 px
 
-header has logo
+✅ header background is 373737
 
-logo is aligned left
+✅ header has logo
 
-dropdown button exists
+✅ logo is aligned left
 
-dropdown button is aligned right
+✅ dropdown button exists
 
-dropdown button height is 40 px
+✅ dropdown button is aligned right
 
-dropdown background is 262626
+✅ dropdown button height is 40 px
 
-dropdown button has outline when active
+✅ dropdown background is 262626
 
-dropdown button active outline is 1 px
+✅ dropdown button has outline when active
 
-dropdown button active outline is colored 0D8B7F
+✅ dropdown button active outline is 1 px
 
-dropdown button is clickable
+✅ dropdown button active outline is colored 0D8B7F
 
-dropdown menu has list items
+✅ dropdown button is clickable
+
+✅ dropdown menu has list items
 
 dropdown list items are clickable
+- Group by function is clickable
+- ✅ Group by role is clickable
 
 clicking dropdown menu items updates dashboard data
 
