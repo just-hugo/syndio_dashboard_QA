@@ -1,5 +1,7 @@
 # Readme
 
+This test suite was built using Selenium in Python, and runs in Python's unittest framework.
+
 ## Selenium
 
 - [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)
