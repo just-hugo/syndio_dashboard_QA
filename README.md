@@ -32,6 +32,8 @@ You may optionally customize browser settings (such as running incognito) or the
 
 You may also customize the expected parameters for things like element height, color, or active status in `/test_options/expected_data.py` 
 
+`browser_options`, `test_options`, and `expected_data` are all prepopulated with defaults, but may be updated to include additional settings.
+
 ## Run tests
 
 `python -m unittest` from the project root.
