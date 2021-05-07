@@ -20,11 +20,11 @@ As an example, this test suite comes with `ChromeDriver 90.0.4430.24`, which wil
 
 The first time you run Selenium, it might fail to work due to being from an unidentified developer. You'll receive a warning.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/12a6153a-0057-41a9-ba48-d676debf1e38/Screen_Shot_2021-05-06_at_10.35.40_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/12a6153a-0057-41a9-ba48-d676debf1e38/Screen_Shot_2021-05-06_at_10.35.40_AM.png)
+[Example of the error](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_error.png?raw=true)
 
 Go to your Mac's System Settings. In the General tab, look for the bottom section, which should have an option to `Open Anyway`
 
-[Example of System Settings.](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_solution.png?raw=true)
+[Example of System Settings](https://github.com/just-hugo/syndio_homework/blob/main/driver_setup/mac_webdriver_solution.png?raw=true)
 
 ## Set test options
 
