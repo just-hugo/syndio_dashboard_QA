@@ -74,8 +74,11 @@ You may optionally customize browser settings (such as running incognito) or the
 ❌ dropdown list items are clickable
 - ❌ Group by function is clickable
 - ✅ Group by role is clickable
+
 ❌ clicking dropdown menu items updates dashboard data
+
 ✅ gender tab exists
+
 ✅ gender tab is active by default
 
 ✅ race tab exists
