@@ -41,31 +41,57 @@ You may optionally customize browser settings (such as running incognito) or the
 ### Test cases
 
 header exists
+
 header height is 70 px
+
 header background is 373737
+
 header has logo
+
 logo is aligned left
+
 dropdown button exists
+
 dropdown button is aligned right
+
 dropdown button height is 40 px
+
 dropdown background is 262626
+
 dropdown button has outline when active
+
 dropdown button active outline is 1 px
+
 dropdown button active outline is colored 0D8B7F
+
 dropdown button is clickable
+
 dropdown menu has list items
+
 dropdown list items are clickable
+
 clicking dropdown menu items updates dashboard data
+
 gender tab exists
+
 gender tab is active by default
+
 race tab exists
+
 race tab is clickable
+
 pay gap box exists
+
 employee comparison box exists
+
 budget box exists
+
 clicking race tab repopulates content boxes
+
 has small responsive breakpoint
+
 has mid responsive breakpoint
+
 has large responsive breakpoint
 
 ## Screencast
