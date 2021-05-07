@@ -1,10 +1,5 @@
 import unittest
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from driver_setup.functions import wait
-from driver_setup import functions as func
-
+from selenium.webdriver.support.color import Color
 
 class Elements(unittest.TestCase):
 
@@ -13,6 +8,41 @@ class Elements(unittest.TestCase):
         header_locator = driver.find_element_by_class_name("header")
 
         return header_locator
+
+    def header_background_color(self, driver):
+        header = Elements().header(driver)
+
+        rgb_color = header.value_of_css_property("background-color")
+        hex_color = Color.from_string(rgb_color).hex
+
+        return hex_color
+
+    def dropdown_button_background_color(self, driver):
+        dropdown_button = Elements().dropdown_button(driver)
+
+        rgb_color = dropdown_button.value_of_css_property("background-color")
+        hex_color = Color.from_string(rgb_color).hex
+
+        return hex_color
+
+    def dropdown_button_border_color(self, driver):
+        dropdown_button = Elements().dropdown_button(driver)
+
+        dropdown_button.click()
+
+        rgb_color = dropdown_button.value_of_css_property("border-color")
+        hex_color = Color.from_string(rgb_color).hex
+
+        return hex_color
+
+    def dropdown_button_border_height(self, driver):
+        dropdown_button = Elements().dropdown_button(driver)
+
+        dropdown_button.click()
+
+        border_width = dropdown_button.value_of_css_property("border-width")
+
+        return border_width
 
     def logo(self, driver):
 
@@ -25,6 +55,16 @@ class Elements(unittest.TestCase):
         dropdown_button = driver.find_element_by_id("dropdown-button")
 
         return dropdown_button
+
+    def dropdown_list(self, driver):
+
+        dropdown_button = self.dropdown_button(driver)
+
+        dropdown_button.click()
+
+        dropdown_list = driver.find_element_by_class_name("optionsList")
+
+        return dropdown_list
 
     def group_by_function_menu_item(self, driver):
 
