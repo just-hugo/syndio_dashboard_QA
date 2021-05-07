@@ -36,6 +36,8 @@ You may optionally customize browser settings (such as running incognito) or the
 
 ## Manual QA
 
+Dashboard: https://syndio-qa-db.herokuapp.com/
+
 ✅ passed manual inspection
 
 ❌ failed manual inspection
